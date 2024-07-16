@@ -1,0 +1,21 @@
+### login
+### valid data for login : admin/1111
+POST {{host}}/api/v1/auth/login
+Content-Type: application/json
+Accept: */*
+
+{
+  "username": "admin",
+  "password": "11111"
+}
+
+### register
+POST {{host}}/api/v1/auth/register
+Content-Type: application/json
+Accept: */*
+
+{
+  "username": "testuser",
+  "password": "1111",
+  "email": "testuser@example.com"
+}

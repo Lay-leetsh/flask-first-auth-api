@@ -1,0 +1,43 @@
+### find by all users
+GET {{host}}/api/v1/users
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMTEwNjM4OSwianRpIjoiNWZmMjQ1Y2ItZDJmZi00YWUwLWE3NjctYmFhZTZiMTQ5NTYwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNzIxMTA2Mzg5LCJjc3JmIjoiODgwNTA2YzQtZTQ0NC00YzQwLWIzZTAtNzk2M2Q3MzlhNDQ2IiwiZXhwIjoxNzIxMTA3Mjg5fQ.hYmusn0ExXPEAP8F_HgWnO0T6RQWIJqCOhDISHm5GsU
+
+### create user
+POST {{host}}/api/v1/users
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMTEwNjM4OSwianRpIjoiNWZmMjQ1Y2ItZDJmZi00YWUwLWE3NjctYmFhZTZiMTQ5NTYwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNzIxMTA2Mzg5LCJjc3JmIjoiODgwNTA2YzQtZTQ0NC00YzQwLWIzZTAtNzk2M2Q3MzlhNDQ2IiwiZXhwIjoxNzIxMTA3Mjg5fQ.hYmusn0ExXPEAP8F_HgWnO0T6RQWIJqCOhDISHm5GsU
+
+{
+  "username": "admin",
+  "password": "1111",
+  "email": "admin@example.com",
+  "role": "admin"
+}
+
+### find by user id
+GET {{host}}/api/v1/users/28
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMTEwNjM4OSwianRpIjoiNWZmMjQ1Y2ItZDJmZi00YWUwLWE3NjctYmFhZTZiMTQ5NTYwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNzIxMTA2Mzg5LCJjc3JmIjoiODgwNTA2YzQtZTQ0NC00YzQwLWIzZTAtNzk2M2Q3MzlhNDQ2IiwiZXhwIjoxNzIxMTA3Mjg5fQ.hYmusn0ExXPEAP8F_HgWnO0T6RQWIJqCOhDISHm5GsU
+
+### modify user
+PUT {{host}}/api/v1/users/28
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMTEwNjM4OSwianRpIjoiNWZmMjQ1Y2ItZDJmZi00YWUwLWE3NjctYmFhZTZiMTQ5NTYwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNzIxMTA2Mzg5LCJjc3JmIjoiODgwNTA2YzQtZTQ0NC00YzQwLWIzZTAtNzk2M2Q3MzlhNDQ2IiwiZXhwIjoxNzIxMTA3Mjg5fQ.hYmusn0ExXPEAP8F_HgWnO0T6RQWIJqCOhDISHm5GsU
+
+{
+  "username": "admin",
+  "password": "1111",
+  "email": "admin@example.com",
+  "role": "admin"
+}
+
+### delete user
+DELETE {{host}}/api/v1/users/28
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcyMTEwNjM4OSwianRpIjoiNWZmMjQ1Y2ItZDJmZi00YWUwLWE3NjctYmFhZTZiMTQ5NTYwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNzIxMTA2Mzg5LCJjc3JmIjoiODgwNTA2YzQtZTQ0NC00YzQwLWIzZTAtNzk2M2Q3MzlhNDQ2IiwiZXhwIjoxNzIxMTA3Mjg5fQ.hYmusn0ExXPEAP8F_HgWnO0T6RQWIJqCOhDISHm5GsU
